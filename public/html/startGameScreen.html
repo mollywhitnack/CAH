@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Start Game</title>
+	</head>
+
+	<body ng-controller='mainCtrl'>
+		<div class="container">
+			<h1>Start Game</h1>
+
+
+
+			<form ng-submit='startGame()'>
+				<div class="out">
+
+
+					<input type="number" min=3 ng-model ='startGame.numPlayers' placeholder="Number of Players" required>
+					
+					<br>
+					<div></div>
+					<br>
+					<div></div>
+
+
+					<div ng-repeat='player in startGame.numPlayersArray track by $index'>
+						{{$index + 1}}.
+						<input ng-model='startGame.names[$index]' type="text"  placeholder="Player Name" required>
+						<input ng-model='startGame.poops[$index]' type="text" placeholder="Hours since last poop" required>
+					</div>
+					<br>
+					<button class = "btn btn-secondary" ng-click='startGame()'>Submit</button>
+
+				</div>
+			</form>
+
+
+		</body>
+
+	</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player</title>
+</head>
+<body>
+ <div class = "container">
+ 
+
+  <div class="col-sm-6 blackCardPage2 animated bounceInDown">
+      <p ng-bind-html='currBlackCard.text'></p>
+  </div>
+
+<br>
+ <h1>{{players[currPlayer].name}}'s hand</h1>
+  <!--<table class='table table-hover table-striped'>
+
+    <tbody>-->
+    <span>
+      <span ng-repeat='whiteCard in players[currPlayer].hand track by $index'>
+        <span ng-click='submitWhiteCard(whiteCard,$index)' class ='whiteCard animated fadeIn cardContainer'><p ng-bind-html='whiteCard.text' ng-click='submitWhiteCard(whiteCard,$index)'></p>
+        <span class='whiteCard animated fadeIn '></span></span>
+      </span>
+    </span>
+
+    <!--</tbody>
+  </table>-->
+
+</div>
+</body>
+</html>

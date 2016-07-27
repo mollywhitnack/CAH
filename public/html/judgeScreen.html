@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Judge Screen</title>
+</head>
+<body>
+ <div class = "container">
+	 <h1>{{currCzarName}} is the card czar. Tremble before your majesty.</h1>
+
+  <div class="bordersPage2">
+      <div class="col-sm-6 blackCardPage2 animated bounceInDown">
+          <p ng-bind-html='currBlackCard.text'></p>
+      </div>
+
+
+      <table class='table table-hover table-striped'>
+        <thead>
+					<th></th>
+        </thead>
+        <tbody>
+          <tr ng-repeat='group in submittedWhiteCards track by $index'>
+
+
+            <td class='animated slideInDown' ng-click='judgePicks(card.player)' ng-repeat='card in group track by $index'>
+              <p ng-bind-html='card.text'></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      </div>
+</div>
+
+
+
+
+
+  </div>
+</body>
+</html>

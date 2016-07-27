@@ -1,0 +1,73 @@
+.gameSquares{
+  padding-top: 8px;
+}
+
+.container {
+  text-align: center;
+}
+
+.game1 {
+  background-color: green;
+}
+
+.btn-home {
+  float: left;
+}
+.cardContainer{
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 150px;
+  height: 230px;
+  margin: 10px;
+  vertical-align:top;
+  font-size: 120%;
+  padding: 10px;
+}
+
+.cardContainer:hover{
+  background-color: #d9d9d9;
+}
+
+#whiteCardButton{
+
+  
+}
+
+.blackCardPage2{
+  float: none;
+  background-color: black;
+  color:white;
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+  border-radius: 25px;
+  font-size: 25px;
+
+}
+.whiteCardPage2{
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+
+}
+
+.row {
+  margin-left: 5px;
+}
+
+.outer{
+  position: relative;
+}
+.inner {
+  position: absolute;
+}
+
+div.sweet-overlay{
+  background-color:rgba( 0, 0, 0, 1);
+}
