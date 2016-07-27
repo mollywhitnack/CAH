@@ -67,7 +67,6 @@ app.controller('mainCtrl', function($scope, $http, $state, Deck){
 
 
 	$scope.judgePicks = index => {
-		console.log();
 		//  winning player goes first next round
 		$scope.currPlayer = index;
 		$scope.players[$scope.currPlayer].score++;
